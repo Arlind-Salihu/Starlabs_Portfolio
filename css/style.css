@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+
+.mainSection{
+    background-image: linear-gradient(to bottom right, #82b078, #6ba27c);
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sectionImage{
+    opacity: 0.6;
+}
+
+.mainImg{
+    display: block;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-repeat: no-repeat;
+}
