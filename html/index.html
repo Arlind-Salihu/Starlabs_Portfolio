@@ -9,36 +9,45 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- SECTION START -->
-    <section class="mainSection">
-      <div class="sectionImage">
-        <img src="../images/lindi.png" alt="img" class="mainImg" />
-      </div>
-      <div class="centered">
+
+    <!-- START OF FIRST CONTAINER -->
+    <div class="firstContainer">
+      <img class="headerImage" src="../images/lindi.png" alt="mainImage" />
+      <h3 class="headerImageText">
         I'm <br />
-        <span>
-          <h1>
-            Arlind <br />
-            Salihu
-          </h1>
-        </span>
-      </div>
-      <div class="centered2">
-      <br/><br/>
+        Arlind Salihu <br />
+        <img
+          src="../images/github.png"
+          alt="img"
+          style="width: 25px; height: 25px;"
+        />
         <a
           class="github"
           href="https://github.com/Arlind-Salihu"
-          target="_blank">
-            <h2>
-                <img src="../images/github.png" alt="img" style="width: 35px; height: 35px; margin-left: 150px;"/>
-                My Github
-            </h2>
-        </a>
-        <div class="decorated-subtitle">
-          A Young Frontend Developer & UX/UI Designer
+          target="_blank"
+          >My Github</a
+        >
+        <br />
+        <p class="secondText">A Young Frontend Developer & UX/UI Designer</p>
+        <div class="col-12 text-center offset-top-75" data-wow-delay=".2s">
+          <a class="arrow" href="#about" data-custom-scroll-to="about">
+            <span>
+              ˅
+            </span>
+          </a>
+        </div>
+        </h3>
+      </div>
+      <!-- END OF FIRST CONTAINER -->
+
+
+      <!-- START OF SECOND CONTAINER -->
+      <div id="about">
+        <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s"><img
+          src="../images/aby.jpg" alt="" width="570" height="351" />
         </div>
       </div>
-    </section>
-    <!-- END OF SECTION -->
+      <!-- END OF SECOND CONTAINER -->
+
   </body>
 </html>

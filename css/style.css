@@ -2,59 +2,110 @@
     margin: 0;
 }
 
-.mainSection {
-    background-image: linear-gradient(to bottom right, #82b078, #6ba27c);
-    justify-content: center;
-    align-items: center;
+html {
+    scroll-behavior: smooth;
 }
 
-
-.sectionImage {
-    opacity: 0.6;
+.firstContainer {
+    background-color: #6ba27c;
 }
 
-.mainImg {
+.headerImage {
     display: block;
     max-height: 100%;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-    background-repeat: no-repeat;
+    opacity: 0.6;
 }
 
-.centered {
+.headerImageText {
     position: absolute;
-    top: 35%;
-    left: 45%;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: white;
     font-family: "Playfair Display", serif;
     line-height: 1.5;
-    font-size: 60px;
-    padding: 8px 0px 10px 0px;
+    font-size: 40px;
     letter-spacing: 0.03em;
-    color: white;
-    margin-top: 350px;
 }
 
-.centered2 {
-    position: absolute;
-    top: 90%;
-    left: 38%;
-    font-family: "Playfair Display", serif;
-    line-height: 1.5;
-    font-size:25px;
-    padding: 8px 0px 10px 0px;
-    letter-spacing: 0.03em;
-    color: white;
-    font-style: italic;
-}
-
-.github{
+.github {
     text-decoration: none;
-    color:white;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
 
-.github:hover{
+.github:hover {
     text-decoration: none;
     color: #82b078;
+}
+
+.secondText {
+    font-family: Playfair Display serif;
+    line-height: 1.5;
+    font-size: 25px;
+    padding: 8px 0px 10px 0px;
+    letter-spacing: 0.03em;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.arrow {
+    position: absolute;
+    top: 125%;
+    margin-left: -20px;
+    transform: translateY(-50%);
+    width: 67px;
+    height: 67px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all ease 0.35s;
+    text-align: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.arrow:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .headerImageText {
+        margin-top: -260px;
+        font-size: 20px;
+    }
+
+    .github {
+        font-size: 15px;
+    }
+
+    .secondText {
+        font-size: 15px;
+    }
+
+    .arrow {
+        top: 110%;
+        width: 37px;
+        height: 37px;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .headerImageText {
+        margin-top: -260px;
+    }
 }
