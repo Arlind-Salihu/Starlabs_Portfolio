@@ -1,111 +1,42 @@
 * {
+    padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.firstContainer {
-    background-color: #6ba27c;
+body{
+    background-color: #131419;
 }
 
-.headerImage {
-    display: block;
-    max-height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    opacity: 0.6;
+#landing {
+    height: auto;
+    margin-top: 10rem;
 }
 
-.headerImageText {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    margin: 0;
+.intro {
     color: white;
-    font-family: "Playfair Display", serif;
-    line-height: 1.5;
-    font-size: 40px;
-    letter-spacing: 0.03em;
+    font-size: 4rem;
+    margin: 5rem;
+    margin-top: 10rem;
 }
 
-.github {
-    text-decoration: none;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
+.introText {
+    color: whitesmoke;
+    font-family: 'Varela Round';
+    font-size: 1.5rem;
+    width: auto;
+    margin: 05rem;
+    max-width: 700px;
+    margin-top: 150px;
+    text-align: justify;
 }
 
-.github:hover {
-    text-decoration: none;
-    color: #82b078;
-}
-
-.secondText {
-    font-family: Playfair Display serif;
-    line-height: 1.5;
-    font-size: 25px;
-    padding: 8px 0px 10px 0px;
-    letter-spacing: 0.03em;
-    font-style: italic;
-    font-weight: 400;
-}
-
-.arrow {
-    position: absolute;
-    top: 125%;
-    margin-left: -20px;
-    transform: translateY(-50%);
-    width: 67px;
-    height: 67px;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all ease 0.35s;
-    text-align: center !important;
-    justify-content: center !important;
-    flex-direction: column !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-.arrow:hover {
-    background-color: white;
-    color: black;
-}
-
-@media screen and (max-width: 767px) {
-    .headerImageText {
-        margin-top: -260px;
-        font-size: 20px;
-    }
-
-    .github {
-        font-size: 15px;
-    }
-
-    .secondText {
-        font-size: 15px;
-    }
-
-    .arrow {
-        top: 110%;
-        width: 37px;
-        height: 37px;
-        margin-left: -10px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width:1023px){
-    .headerImageText {
-        margin-top: -260px;
-    }
+.spanName {
+    color: #117bfb;
 }
