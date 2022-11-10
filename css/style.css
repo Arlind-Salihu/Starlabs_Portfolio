@@ -1,22 +1,19 @@
 * {
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body{
-    background-color: #131419;
+body {
+    background-color: rgb(48, 48, 54);
 }
 
-#landing {
-    height: auto;
-    margin-top: 10rem;
+/*First Container*/
+
+#landing{
+    height: 100vh;
 }
 
 .intro {
@@ -40,3 +37,86 @@ body{
 .spanName {
     color: #117bfb;
 }
+
+.logoImg {
+    width: 400px;
+    height: 600px;
+    margin-left: 60%;
+    border-radius: 50%;
+    box-shadow: 0 4px 20px 0 #117bfb;
+    margin-right: 10rem;
+    margin-top: -50rem;
+}
+
+.logoImg:hover {
+    transform: scale(1.1);
+    box-shadow: 0;
+    opacity: 1;
+}
+
+/*End of first container*/
+
+
+/*Second Container*/
+#skills {
+    height: 100vh;
+}
+
+.skillsHead {
+    color: white;
+    font-size: 4rem;
+    margin: 5rem;
+    margin-top: 10rem;
+}
+
+.skillsClass {
+    padding-top: 1rem;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.skillText {
+    font-family: 'Varela Round';
+    margin-left: 5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.container {
+    width: 60%;
+    margin: 1rem;
+    position: relative;
+    border-radius: 10px;
+    left: 4rem;
+    background-color: #ddd;
+}
+
+.firstSkill {
+    width: 95%;
+    border-radius: 10px;
+    background-color: #2196F3;
+}
+
+.secondSkill {
+    width: 90%;
+    border-radius: 10px;
+    background-color: #2196F3;
+}
+
+.thirdSkill {
+    width: 80%;
+    border-radius: 10px;
+    background-color: #2196F3;
+}
+
+.fourthSkill {
+    width: 60%;
+    border-radius: 10px;
+    background-color: #2196F3;
+}
+/*End of Second Container*/
