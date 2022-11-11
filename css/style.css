@@ -176,3 +176,17 @@ body {
     transform: scale(1.1);
 }
 /*End of Third Container*/
+
+/*Start of Fourth (Footer) Container*/
+.right-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 850px;
+    border-top: white solid 1px;
+    height: 50px;
+}
+.link-footer{
+    height: 50px;
+    margin: 10px;
+}
+/*End of Fourth (Footer) Container*/
