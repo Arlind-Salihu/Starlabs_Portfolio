@@ -9,6 +9,7 @@
     <title>Portfolio</title>
   </head>
   <body>
+    
     <!-- START OF NAVBAR SECTION -->
     <div class="topnav" id="myTopnav">
       <a href="#landing">Home</a>
@@ -16,10 +17,14 @@
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+        <img
+          src="../images/hamburger.png"
+          alt="hamburger"
+          style="width: 35px; height: 35px"
+        />
       </a>
     </div>
-    <nav>
+    <nav id="scroll">
       <ul>
         <li><a class="normal-a" href="#landing">Home</a></li>
         <li><a class="normal-a" href="#skills">Skills</a></li>
@@ -66,7 +71,7 @@
         <div class="container">
           <div class="skills thirdSkill">80%</div>
         </div>
-        <p class="skillText">Adobe XD, Adobe Photoshop, Adobe Illustrator</p>
+        <p class="skillText">Adobe XD, Adobe Ph, Adobe Ill</p>
         <div class="container">
           <div class="skills fourthSkill">60%</div>
         </div>
@@ -94,8 +99,8 @@
             <div class="card">
               <a href="https://savvysolution.tech/" target="_blank">
                 <img src="../images/software.png" alt="img" />
-                <p>Software Dashboard</p>
-                <p class="projectText">Software Dashboard</p>
+                <p>Software Landing Page</p>
+                <p class="projectText">Software Landing Page</p>
               </a>
             </div>
 
@@ -164,15 +169,9 @@
           </div>
         </div>
         <div style="text-align: center">
-          <div class="carosuelButton round" onclick="currentSlide(1)">
-            1
-          </div>
-          <div class="carosuelButton round" onclick="currentSlide(2)">
-            2
-          </div>
-          <div class="carosuelButton round" onclick="currentSlide(3)">
-            2
-          </div>
+          <div class="carosuelButton round" onclick="currentSlide(1)">1</div>
+          <div class="carosuelButton round" onclick="currentSlide(2)">2</div>
+          <div class="carosuelButton round" onclick="currentSlide(3)">2</div>
         </div>
       </div>
     </section>
