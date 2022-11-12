@@ -306,12 +306,13 @@ nav a:hover {
 }
 
 .message {
-    height: 170px;
+    height: 200px;
     border: 2px solid #ebebeb;
     border-radius: 6px;
     background: white;
     margin: 5px;
     width: 700px;
+    resize: none;
 }
 
 .checkOptions {

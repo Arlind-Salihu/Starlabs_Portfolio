@@ -1,3 +1,7 @@
+<?php
+include 'contactForm.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -171,7 +175,7 @@
         <div style="text-align: center">
           <div class="carosuelButton round" onclick="currentSlide(1)">1</div>
           <div class="carosuelButton round" onclick="currentSlide(2)">2</div>
-          <div class="carosuelButton round" onclick="currentSlide(3)">2</div>
+          <div class="carosuelButton round" onclick="currentSlide(3)">3</div>
         </div>
       </div>
     </section>
@@ -181,23 +185,23 @@
     <section id="contact" class="middleContainer">
       <div class="contactForm">
         <p class="skillsHead">Contact <span class="spanName">Me</span></p>
-        <form action="#" method="#">
+        <form method="post" enctype="multipart/form-data">
           <div class="input-form">
             <div>
-              <input type="text" class="name" placeholder="Name..." />
-              <input type="text" class="lastName" placeholder="Last Name..." />
+              <input type="text" class="name" placeholder="Name..." name="name"/>
+              <input type="text" class="lastName" placeholder="Last Name..." name="surname"/>
             </div>
 
             <div>
-              <input type="email" class="email" placeholder="E-Mail..." />
+              <input type="email" class="email" placeholder="E-Mail..." name="email"/>
             </div>
 
             <div>
-              <input type="text" class="message" placeholder="Message..." />
+            <textarea class="message" name="message" rows="50" placeholder="Message.."></textarea>
             </div>
 
             <div>
-              <input type="submit" class="button" />
+              <input type="submit" class="button" name="submitMessage" style="cursor:pointer;"/>
             </div>
             <br />
           </div>
