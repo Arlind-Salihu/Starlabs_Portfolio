@@ -10,15 +10,56 @@ body {
     background-color: rgb(48, 48, 54);
 }
 
-/*First Container*/
+/*Start of Navbar Section*/
 
-#landing{
+nav {
+    height: 80px;
+    position: fixed;
+    margin-top: -10rem;
+    background-color: rgb(39, 41, 43);
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-family: "Poppins";
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a.active, nav a:hover {
+    background: #1b9bff;
+    opacity: 1;
+    transition: 0.5s;
+}
+#myTopnav {
+    display: none;
+}
+/*End of Navbar Section*/
+
+
+/*Start of First Container*/
+#landing, #skills, #projects {
     height: 100vh;
 }
 
 .intro {
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 5rem;
     margin-top: 10rem;
 }
@@ -44,7 +85,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 4px 20px 0 #117bfb;
     margin-right: 10rem;
-    margin-top: -50rem;
+    margin-top: -30rem;
 }
 
 .logoImg:hover {
@@ -56,20 +97,16 @@ body {
 /*End of first container*/
 
 
-/*Second Container*/
-#skills {
-    height: 100vh;
-}
-
+/*Start of Second Container*/
 .skillsHead {
     color: white;
     font-size: 3rem;
     margin: 5rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .skillsClass {
-    padding-top: 1rem;
+    padding-top: 0.05rem;
 }
 
 .skills {
@@ -89,10 +126,9 @@ body {
 .container {
     width: 60%;
     margin: 1rem;
-    position: relative;
-    border-radius: 10px;
-    left: 4rem;
+    border-radius: 10px;    
     background-color: #ddd;
+    margin-left: 80px;
 }
 
 .firstSkill {
@@ -122,15 +158,12 @@ body {
     border-radius: 10px;
     background-color: #2196F3;
 }
+
 /*End of Second Container*/
 
-/*Start of Third Container*/
-#projects {
-    height: 100vh;
-    margin-top: 5rem;
-}
 
-.wrapper{
+/*Start of Third Container*/
+.wrapper {
     padding-top: 0.5rem;
 }
 
@@ -156,10 +189,10 @@ body {
     font-family: 'Alata';
     font-weight: bold;
     text-align: center;
-    font-size: 1rem;    
+    font-size: 1rem;
 }
 
-.card a{
+.card a {
     text-decoration: none;
 }
 
@@ -175,18 +208,132 @@ body {
     opacity: 100%;
     transform: scale(1.1);
 }
+
+.carosuelButton {
+    cursor: pointer;
+    margin-top: 75px;
+    height: 25px;
+    font-size: larger;
+    font-weight: 900;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #bbb;
+}
+
+.active, .carosuelButton:hover {
+    background-color: #2196F3;
+}
+
+.round {
+    border-radius: 50%;
+}
+
 /*End of Third Container*/
 
-/*Start of Fourth (Footer) Container*/
-.right-footer{
+
+/*Start of Fourth Container*/
+.middleContainer {
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.contactForm {
+    padding-top: 0.5rem;
+}
+
+.input-form {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.input-form-news {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.input-form .input {
+    margin-top: 10px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    border: 0px;
+    padding-left: 10px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #cae0d9;
+}
+
+.name {
+    height: 40px;
+    border: 2px solid #ebebeb;
+    border-radius: 6px;
+    background: white;
+    margin: 5px;
+    width: 338px;
+}
+
+.lastName {
+    height: 40px;
+    border: 2px solid #ebebeb;
+    border-radius: 6px;
+    background: white;
+    margin: 5px;
+    width: 338px;
+}
+
+.email {
+    height: 40px;
+    border: 2px solid #ebebeb;
+    border-radius: 6px;
+    background: white;
+    margin: 5px;
+    width: 700px;
+}
+
+.message {
+    height: 170px;
+    border: 2px solid #ebebeb;
+    border-radius: 6px;
+    background: white;
+    margin: 5px;
+    width: 700px;
+}
+
+.checkOptions {
+    margin-right: 60px;
+}
+
+.button {
+    height: 50px;
+    border: transparent;
+    border-radius: 6px;
+    background: #2196F3;
+    margin: 5px;
+    width: 710px;
+}
+
+/*End of Fourth Container*/
+
+
+/*Start of Fifth (Footer) Container*/
+.right-footer {
     display: flex;
     justify-content: center;
-    margin-top: 850px;
     border-top: white solid 1px;
     height: 50px;
+    margin-top: 50px;
 }
-.link-footer{
-    height: 50px;
+
+.link-footer {
+    height: 30px;
     margin: 10px;
 }
-/*End of Fourth (Footer) Container*/
+
+/*End of Fifth (Footer) Container*/
