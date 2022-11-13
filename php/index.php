@@ -185,6 +185,11 @@ include 'contactForm.php';
     <section id="contact" class="middleContainer">
       <div class="contactForm">
         <p class="skillsHead">Contact <span class="spanName">Me</span></p>
+        <?php if (isset($_SESSION['success']) && !empty($_SESSION['success'])) { ?>
+                                <div class="success-message"><?php echo $_SESSION['success']; ?></div>
+                                <?php
+                                unset($_SESSION['success']);
+                                }?>
         <form method="post" enctype="multipart/form-data">
           <div class="input-form">
             <div>

@@ -306,7 +306,7 @@ nav a:hover {
 }
 
 .message {
-    height: 200px;
+    height: 150px;
     border: 2px solid #ebebeb;
     border-radius: 6px;
     background: white;
@@ -328,6 +328,13 @@ nav a:hover {
     width: 710px;
 }
 
+.success-message{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    text-align: center;
+}
 /*End of Fourth Container*/
 
 
