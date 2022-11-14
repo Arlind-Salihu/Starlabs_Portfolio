@@ -193,8 +193,8 @@ include 'contactForm.php';
         <form method="post" enctype="multipart/form-data">
           <div class="input-form">
             <div>
-              <input type="text" class="name" placeholder="Name..." name="name"/>
-              <input type="text" class="lastName" placeholder="Last Name..." name="surname"/>
+              <input type="text" class="name" placeholder="Name..." name="name" required/>
+              <input type="text" class="lastName" placeholder="Last Name..." name="surname" required/>
             </div>
 
             <div>
@@ -202,11 +202,11 @@ include 'contactForm.php';
             </div>
 
             <div>
-            <textarea class="message" name="message" rows="50" placeholder="Message.."></textarea>
+            <textarea class="message" name="message" rows="50" placeholder="Message.." required></textarea>
             </div>
 
             <div>
-              <input type="submit" class="button" name="submitMessage" style="cursor:pointer;"/>
+              <input type="submit" class="button" name="submitMessage" style="cursor:pointer;" />
             </div>
             <br />
           </div>

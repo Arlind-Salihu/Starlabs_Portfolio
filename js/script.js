@@ -54,5 +54,47 @@ function showCarousel(n) {
   slides[carousel - 1].style.display = "block";
   carosuelButtons[carousel - 1].className += " active";
 }
-
 // END OF CAROUSEL SECTION
+
+
+// START OF CONTACT FORM
+// TEST SCRIPT
+
+// function registration() {
+
+//   var name = document.getElementById("name");
+//   var surname = document.getElementById("surname").value;
+//   var email = document.getElementById("email").value;
+//   var message = document.getElementById("message").value;
+  
+//   //email id expression code
+//   var letters = /^[A-Za-z]+$/;
+//   var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+//   if (name == '') {
+//     alert('Ju lutemi shkruani emrin tuaj');
+//   }
+//   else if (!letters.test(name)) {
+//     alert('Fusha e emrit kërkonte vetëm karaktere alfabeti');    
+//   }
+//   else if (surname == '') {
+//     alert('Ju lutemi shkruani mbiemrin tuaj');    
+//   }
+//   else if (!letters.test(surname)) {
+//     alert('Fusha e emrit kërkonte vetëm karaktere alfabeti');    
+//   }
+//   else if (email == '') {
+//     alert('Ju lutemi shkruani email-in tuaj të përdoruesit');
+//   }
+//   else if (!filter.test(email)) {
+//     alert('Email i pavlefshem');    
+//   }
+//   else if (message == '') {
+//     alert('Ju lutemi shkruani mesazhin tuaj');    
+//   }
+//   else if(name != '' && surname != '' && email != '' && message != ''){
+//     window.open("http://localhost:81/Starlabs_Portfolio/php/#contact")
+//     alert('Mesazhi u dergua me sukses!');
+//   }
+// }
+// END OF CONTACT FORM
